@@ -19,30 +19,27 @@ function allLongestStrings(inputArray) {
       return output
   }
 }
+console.log(allLongestStrings(input));
+// Bài 2
 
+var arr = [60, 40, 55, 75, 64]
 
-// console.log(allLongestStrings(input));
-// // Bài 2
-// let input = [60, 40, 55, 75, 64]
-// let output= 0;
-// function alternatingSums(a){
-//     for
-// }
-
-
-
-
-
-
-
-
-// js cho web
-const colors = ['yellow','red','orange','pink','blue','green'];
-const btn = document.querySelector('.btn');
-pickColor = () =>{
-    const colorsIndex = Math.floor(Math.random() * colors.length);
-   return colors[colorsIndex];
+function alternatingSums(a) {
+  var sum1 = 0;
+  var sum2 = 0;
+  for(let i = 0; i < a.length; i+= 2) {
+    sum1 += a[i];
+  }
+  for(let j = 1;j < a.length; j+= 2) {
+    sum2 += a[j];
+    
+  }
+  return [sum1, sum2]
 }
-btn.addEventListener('click',function(){
-    document.body.style.backgroundColor = pickColor()
-})
+
+console.log(alternatingSums(arr))
+
+
+
+
+
